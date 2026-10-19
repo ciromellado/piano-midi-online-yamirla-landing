@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Midi online | Yamirla Piano PWA-3</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap');
+        
+        /* Aumento proporcional de fuente base */
+        html {
+            font-size: 18px;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .glow-effect {
+            box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="relative overflow-hidden border-b border-gray-800 bg-gradient-to-b from-gray-900 to-[#0b0f19]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-bolt"></i> PWA Audio Engine v3.0
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+                Piano Midi online | <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">Yamirla Piano PWA-3</span>
+            </h1>
+            <p class="text-2xl sm:text-3xl font-light text-indigo-200 mb-8">
+                Adiós a los VST | Llegó la Revolución Web
+            </p>
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed">
+                Descubre cómo la tecnología web moderna transforma tu navegador en una estación de trabajo musical profesional. Cero descargas kilométricas, cero licencias complejas y sonido de alta fidelidad instantáneo.
+            </p>
+            <div class="flex justify-center">
+                <a href="https://ciromellado.github.io/Yamirla-Piano-PWA-3/" target="_blank" class="px-9 py-4 text-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl shadow-lg shadow-indigo-500/25 transition duration-200 flex items-center gap-3">
+                    <i class="fa-solid fa-up-right-from-square"></i> Abrir Yamirla Piano PWA-3
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- VIDEO SECTION -->
+    <section class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-3">Mira Yamirla Piano PWA-3 en Acción</h2>
+            <p class="text-lg text-gray-400">Demostración en video de la fluidez y potencia del audio web.</p>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-gray-900 glow-effect aspect-video">
+            <video class="w-full h-full object-cover" controls preload="metadata">
+                <source src="video/piano-yamirla.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video HTML5.
+            </video>
+        </div>
+    </section>
+
+    <!-- REVOLUTION EXPLANATION SECTION -->
+    <section class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-indigo-400 font-semibold text-base uppercase tracking-wider">El futuro de la producción musical</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">¿Por qué el sonido web es más liviano que los VST pesados?</h2>
+                <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+                    <p>
+                        Los complementos tradicionales (VSTs) de escritorio requieren instalaciones masivas, ocupan decenas de gigabytes en disco duro y sobrecargan la memoria RAM antes de emitir una sola nota.
+                    </p>
+                    <p>
+                        <strong>Yamirla Piano PWA-3</strong> aprovecha la potencia de la <span class="text-indigo-400 font-medium">Web Audio API</span> y motores de muestras ultraligeros bajo demanda. Las librerías de sonido se descargan de forma inteligente y fragmentada solo cuando se necesitan, ejecutándose directamente en el motor de ejecución optimizado de tu navegador web.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-8 rounded-2xl shadow-xl">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-scale-balanced text-indigo-400"></i> Comparativa Directa
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <i class="fa-solid fa-circle-xmark text-red-400 mt-1 text-xl"></i>
+                        <div>
+                            <strong class="text-white text-lg block">VSTs de Escritorio Tradicionales</strong>
+                            <span class="text-base text-gray-400">Pesos de 2GB a 50GB+, instalaciones tediosas, bloqueos de CPU e incompatibilidades de sistema operativo.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1 text-xl"></i>
+                        <div>
+                            <strong class="text-white text-lg block">Yamirla Piano PWA-3 (Web)</strong>
+                            <span class="text-base text-gray-400">Cero instalación, acceso instantáneo desde cualquier dispositivo, bajísimo consumo de recursos y portabilidad total.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-8 text-center text-gray-400 text-base">
+        <p class="mb-2">Yamirla Piano PWA-3 — Revolucionando el sonido en la web.</p>
+        <p>Desarrollado por: Kharla-Web-Solution, para creadores, músicos y entusiastas de la tecnología musical.</p>
+      
+    </footer>
+
+</body>
+</html>
